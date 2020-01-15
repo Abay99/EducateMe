@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ConflictView" customModule="Steve" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="232"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="oHP-tA-dHB">
+                    <rect key="frame" x="26" y="34.5" width="283" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="SAR-CY-kF4"/>
+                    </constraints>
+                    <string key="text">You have already applied for 
+a job that will be conflicting with this date and time.</string>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                    <color key="textColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tuh-Zl-Y8R">
+                    <rect key="frame" x="20" y="112.5" width="295" height="40"/>
+                    <color key="backgroundColor" red="0.22745098039215686" green="0.64313725490196072" blue="0.8666666666666667" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Yhu-8v-XWL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
+                    <state key="normal" title="Browse More Jobs">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="buttonActionsWithBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="VJA-p5-dQ0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCC-gn-2Ap">
+                    <rect key="frame" x="20" y="168" width="295" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="eIe-S3-byd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
+                    <state key="normal" title="View Conflicting Job">
+                        <color key="titleColor" red="0.2274509804" green="0.64313725489999995" blue="0.86666666670000003" alpha="1" colorSpace="deviceRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.2274509804" green="0.64313725489999995" blue="0.86666666670000003" alpha="1" colorSpace="deviceRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="buttonActionsWithBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="EEo-2E-Pcu"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="PCC-gn-2Ap" secondAttribute="trailing" constant="20" id="7cr-WC-QJb"/>
+                <constraint firstItem="tuh-Zl-Y8R" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="9bf-cE-Vdc"/>
+                <constraint firstItem="oHP-tA-dHB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="34.5" id="DYF-pO-uaC"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="oHP-tA-dHB" secondAttribute="trailing" constant="26" id="FnK-4i-3QZ"/>
+                <constraint firstItem="PCC-gn-2Ap" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="JZA-tO-aOU"/>
+                <constraint firstItem="oHP-tA-dHB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="26" id="QnU-6I-x0k"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="tuh-Zl-Y8R" secondAttribute="trailing" constant="20" id="aag-Xe-wCY"/>
+                <constraint firstItem="tuh-Zl-Y8R" firstAttribute="top" secondItem="oHP-tA-dHB" secondAttribute="bottom" constant="24" id="q6V-zb-39I"/>
+                <constraint firstItem="PCC-gn-2Ap" firstAttribute="top" secondItem="tuh-Zl-Y8R" secondAttribute="bottom" constant="15.5" id="yK1-xr-FFS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="6"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="41" y="-119"/>
+        </view>
+    </objects>
+</document>

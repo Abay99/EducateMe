@@ -1,0 +1,6 @@
+projectKey=Steve-iOS
+serverUrl=https://sonarqube.appster.in/sonar
+serverVersion=7.0.0.36138
+dashboardUrl=https://sonarqube.appster.in/sonar/dashboard/index/Steve-iOS
+ceTaskId=AWR9MnTyDWKzx2rI6ZgA
+ceTaskUrl=https://sonarqube.appster.in/sonar/api/ce/task?id=AWR9MnTyDWKzx2rI6ZgA

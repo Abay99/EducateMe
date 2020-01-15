@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb1687429601332691</string>
+				<string>com.workbuddy.steve</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>49</string>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>28686bb3b99c2cc89694f092b4aae486c510e425</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitInfo</key>
+				<dict/>
+				<key>KitName</key>
+				<string>Crashlytics</string>
+			</dict>
+		</array>
+	</dict>
+	<key>FacebookAppID</key>
+	<string>1687429601332691</string>
+	<key>FacebookDisplayName</key>
+	<string>Steve</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-share-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+		<string>youtube</string>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>STEVE needs to use your camera</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>STEVE needs your current location to show jobs</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>STEVE needs your current location to show jobs</string>
+	<key>NSLocationUsageDescription</key>
+	<string>STEVE needs your current location to show jobs</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>STEVE needs your current location to show jobs</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>STEVE needs to use your photo library</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Montserrat-MediumItalic.otf</string>
+		<string>Montserrat-Bold.otf</string>
+		<string>Montserrat-BlackItalic.otf</string>
+		<string>Montserrat-BoldItalic.otf</string>
+		<string>Montserrat-Light.otf</string>
+		<string>Montserrat-ThinItalic.otf</string>
+		<string>Montserrat-Thin.otf</string>
+		<string>Montserrat-ExtraLight.otf</string>
+		<string>Montserrat-Medium.otf  </string>
+		<string>Montserrat-Italic.otf</string>
+		<string>Montserrat-Regular.otf</string>
+		<string>Montserrat-Black.otf</string>
+		<string>Montserrat-SemiBold.otf</string>
+	</array>
+	<key>UIFileSharingEnabled</key>
+	<true/>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>branch_key</key>
+	<string>key_live_niThof2CGv2sI1kdDhYyPjlnCvfdYrzj</string>
+</dict>
+</plist>

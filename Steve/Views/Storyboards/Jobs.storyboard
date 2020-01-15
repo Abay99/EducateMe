@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Job DetailVC-->
+        <scene sceneID="AoC-kd-UTv">
+            <objects>
+                <viewController storyboardIdentifier="JobDetailVC" hidesBottomBarWhenPushed="YES" id="9qB-zh-4aV" customClass="JobDetailVC" customModule="Steve" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2kS-AF-7Qq"/>
+                        <viewControllerLayoutGuide type="bottom" id="mkt-pc-Jbe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H64-jy-RCo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="2bE-7A-peZ">
+                                <rect key="frame" x="0.0" y="82" width="375" height="585"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="JobFirstCell" rowHeight="43" id="wt1-t4-pEq" customClass="JobFirstCell" customModule="Steve" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="1" width="375" height="43"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wt1-t4-pEq" id="UGl-Z1-QNX">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BzD-3O-c30">
+                                                    <rect key="frame" x="29" y="18" width="1" height="25"/>
+                                                    <color key="backgroundColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.94117647059999998" alpha="1" colorSpace="deviceRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="1" id="HWM-ZL-IkY"/>
+                                                    </constraints>
+                                                </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greyRadio" translatesAutoresizingMaskIntoConstraints="NO" id="LgF-Ni-yKk">
+                                                    <rect key="frame" x="24" y="14" width="12" height="12"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="12" id="0xK-I9-fWL"/>
+                                                        <constraint firstAttribute="height" constant="12" id="b1J-vy-r8I"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job Id : 0000000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yH5-Aw-nZr">
+                                                    <rect key="frame" x="47" y="11" width="315" height="18"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
+                                                    <color key="textColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="deviceRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="BzD-3O-c30" secondAttribute="bottom" constant="-0.5" id="4FT-pT-yul"/>
+                                                <constraint firstItem="yH5-Aw-nZr" firstAttribute="leading" secondItem="LgF-Ni-yKk" secondAttribute="trailing" constant="11" id="56N-Fo-TuE"/>
+                                                <constraint firstItem="BzD-3O-c30" firstAttribute="leading" secondItem="UGl-Z1-QNX" secondAttribute="leading" constant="29" id="BXc-4Q-7U0"/>
+                                                <constraint firstItem="LgF-Ni-yKk" firstAttribute="centerX" secondItem="BzD-3O-c30" secondAttribute="centerX" id="Ig0-2d-JQM"/>
+                                                <constraint firstItem="LgF-Ni-yKk" firstAttribute="top" secondItem="UGl-Z1-QNX" secondAttribute="top" constant="14" id="bGl-eh-Vbe"/>
+                                                <constraint firstAttribute="trailing" secondItem="yH5-Aw-nZr" secondAttribute="trailing" constant="13" id="cUW-fu-Flb"/>
+                                                <constraint firstItem="BzD-3O-c30" firstAttribute="top" secondItem="UGl-Z1-QNX" secondAttribute="top" constant="18" id="eVh-xu-hdZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="yH5-Aw-nZr" secondAttribute="bottom" constant="13.5" id="foF-9r-Aun"/>
+                                                <constraint firstItem="yH5-Aw-nZr" firstAttribute="top" secondItem="UGl-Z1-QNX" secondAttribute="top" constant="11" id="l4H-bQ-frh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="jobTitleLabel" destination="yH5-Aw-nZr" id="G8X-Rb-xhZ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BRQ-Jh-pgy" customClass="TopBarView" customModule="Steve" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="62"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="ulp-oU-dDj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BRQ-Jh-pgy" firstAttribute="trailing" secondItem="H64-jy-RCo" secondAttribute="trailing" id="0XC-LF-MLp"/>
+                            <constraint firstItem="2bE-7A-peZ" firstAttribute="leading" secondItem="H64-jy-RCo" secondAttribute="leading" id="2c7-H9-dyr"/>
+                            <constraint firstItem="2bE-7A-peZ" firstAttribute="top" secondItem="BRQ-Jh-pgy" secondAttribute="bottom" id="OOO-ZL-IHR"/>
+                            <constraint firstAttribute="trailing" secondItem="2bE-7A-peZ" secondAttribute="trailing" id="axk-1Y-Phi"/>
+                            <constraint firstItem="BRQ-Jh-pgy" firstAttribute="top" secondItem="2kS-AF-7Qq" secondAttribute="bottom" id="etv-kR-6Nm"/>
+                            <constraint firstItem="mkt-pc-Jbe" firstAttribute="top" secondItem="2bE-7A-peZ" secondAttribute="bottom" id="hji-l9-kfj"/>
+                            <constraint firstItem="BRQ-Jh-pgy" firstAttribute="leading" secondItem="H64-jy-RCo" secondAttribute="leading" id="nWf-Po-nyN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="jobTableView" destination="2bE-7A-peZ" id="IR1-s7-WiD"/>
+                        <outlet property="topView" destination="BRQ-Jh-pgy" id="xZJ-p7-lNO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZBa-tl-fCc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1352.8" y="-64.31784107946028"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="greyRadio" width="14" height="14"/>
+    </resources>
+</document>

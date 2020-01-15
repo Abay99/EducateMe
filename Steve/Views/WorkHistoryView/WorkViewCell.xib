@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WorkViewCell" id="LKM-4s-fW7" customClass="WorkViewCell" customModule="Steve" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LKM-4s-fW7" id="KrA-ku-K9U">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="63.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5j3-WS-0cA">
+                        <rect key="frame" x="29" y="0.0" width="1" height="63.5"/>
+                        <color key="backgroundColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.94117647059999998" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="lFx-Ki-lHm"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2b7-fT-unK">
+                        <rect key="frame" x="24" y="12" width="12" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="12" id="5I0-Z2-je4"/>
+                            <constraint firstAttribute="height" constant="12" id="MU6-Q5-sMt"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="33" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coP-SA-E1d">
+                        <rect key="frame" x="47.5" y="10" width="315" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="JBS-Yd-Fvm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                        <color key="textColor" red="0.73333333329999995" green="0.73725490199999999" blue="0.80392156859999997" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uhn-Tf-3JL" customClass="WorkHistoryView" customModule="Steve" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="29" width="363" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5j3-WS-0cA" firstAttribute="top" secondItem="KrA-ku-K9U" secondAttribute="top" id="1zZ-u5-dZG"/>
+                    <constraint firstItem="5j3-WS-0cA" firstAttribute="leading" secondItem="KrA-ku-K9U" secondAttribute="leading" constant="29" id="7FS-ga-Zq6"/>
+                    <constraint firstItem="uhn-Tf-3JL" firstAttribute="top" secondItem="coP-SA-E1d" secondAttribute="bottom" constant="4" id="8ss-Eb-D1e"/>
+                    <constraint firstItem="coP-SA-E1d" firstAttribute="top" secondItem="KrA-ku-K9U" secondAttribute="top" constant="10" id="9US-ee-0G5"/>
+                    <constraint firstAttribute="trailing" secondItem="uhn-Tf-3JL" secondAttribute="trailing" constant="12" id="Da3-U9-nKp"/>
+                    <constraint firstItem="coP-SA-E1d" firstAttribute="leading" secondItem="2b7-fT-unK" secondAttribute="trailing" constant="11.5" id="GKn-tu-VqH"/>
+                    <constraint firstAttribute="bottom" secondItem="5j3-WS-0cA" secondAttribute="bottom" id="IJ8-If-6DJ"/>
+                    <constraint firstItem="2b7-fT-unK" firstAttribute="top" secondItem="KrA-ku-K9U" secondAttribute="top" constant="12" id="Lju-M9-MDo"/>
+                    <constraint firstItem="uhn-Tf-3JL" firstAttribute="leading" secondItem="KrA-ku-K9U" secondAttribute="leading" id="RJg-s4-W2R"/>
+                    <constraint firstAttribute="trailing" secondItem="coP-SA-E1d" secondAttribute="trailing" constant="12.5" id="SmB-0u-ooc"/>
+                    <constraint firstAttribute="bottom" secondItem="uhn-Tf-3JL" secondAttribute="bottom" priority="250" constant="4.5" id="beX-Ue-deJ"/>
+                    <constraint firstItem="2b7-fT-unK" firstAttribute="centerX" secondItem="5j3-WS-0cA" secondAttribute="centerX" id="dI1-c8-kkc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="jobImageView" destination="2b7-fT-unK" id="mLl-43-obH"/>
+                <outlet property="jobTitleLabel" destination="coP-SA-E1d" id="oxZ-uB-Io6"/>
+                <outlet property="viewBottomConstraint" destination="IJ8-If-6DJ" id="IYX-IF-blx"/>
+                <outlet property="viewTopConstraint" destination="1zZ-u5-dZG" id="5OE-DH-79v"/>
+                <outlet property="workHistoryView" destination="uhn-Tf-3JL" id="kiu-Gu-dgv"/>
+            </connections>
+            <point key="canvasLocation" x="301.5" y="19"/>
+        </tableViewCell>
+    </objects>
+</document>

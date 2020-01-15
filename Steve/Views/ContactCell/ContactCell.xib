@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ContactCell" rowHeight="135" id="SnC-bJ-8Fo" customClass="ContactCell" customModule="Steve" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SnC-bJ-8Fo" id="SdO-TK-uqe">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="134.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2np-x9-VQA">
+                        <rect key="frame" x="20" y="16" width="306" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="m8s-kd-nzk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
+                        <color key="textColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="0.5" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowRight" translatesAutoresizingMaskIntoConstraints="NO" id="5Tu-3A-BvI">
+                        <rect key="frame" x="347" y="20" width="7.5" height="13.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13.5" id="i02-PM-Uk0"/>
+                            <constraint firstAttribute="width" constant="7.5" id="wdG-U4-ztQ"/>
+                        </constraints>
+                    </imageView>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GeP-fx-0BV">
+                        <rect key="frame" x="0.0" y="51" width="375" height="0.0"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgL-VA-CFE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                                <color key="backgroundColor" red="0.71764705880000002" green="0.71764705880000002" blue="0.71764705880000002" alpha="0.20031984059999999" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="lzw-1L-MJJ"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7k-WM-uBE">
+                                <rect key="frame" x="20" y="8" width="110" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="K2a-J3-dVu"/>
+                                    <constraint firstAttribute="height" constant="30" id="twW-PS-9Xj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
+                                <state key="normal" title="Get In touch">
+                                    <color key="titleColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="0.5" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="contactActionWithSender:" destination="SnC-bJ-8Fo" eventType="touchUpInside" id="Gtw-wQ-vWC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYL-Y0-PNo">
+                                <rect key="frame" x="20" y="46.5" width="110" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="rOL-Pl-Q3p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
+                                <state key="normal" title="Write to Us">
+                                    <color key="titleColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="0.5" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="contactActionWithSender:" destination="SnC-bJ-8Fo" eventType="touchUpInside" id="Ltd-x8-u7H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="R7k-WM-uBE" firstAttribute="top" secondItem="dgL-VA-CFE" secondAttribute="bottom" constant="7" id="6fL-oI-AFm"/>
+                            <constraint firstItem="dgL-VA-CFE" firstAttribute="leading" secondItem="GeP-fx-0BV" secondAttribute="leading" id="Aps-dQ-9Wx"/>
+                            <constraint firstItem="dgL-VA-CFE" firstAttribute="top" secondItem="GeP-fx-0BV" secondAttribute="top" id="HYN-Ki-Fjk"/>
+                            <constraint firstItem="R7k-WM-uBE" firstAttribute="leading" secondItem="GeP-fx-0BV" secondAttribute="leading" constant="20" id="Qfh-ti-cMq"/>
+                            <constraint firstAttribute="height" id="SvS-wm-OHp"/>
+                            <constraint firstAttribute="trailing" secondItem="dgL-VA-CFE" secondAttribute="trailing" id="ZRs-t2-oVZ"/>
+                            <constraint firstItem="bYL-Y0-PNo" firstAttribute="leading" secondItem="R7k-WM-uBE" secondAttribute="leading" id="a0V-bn-ruM"/>
+                            <constraint firstItem="bYL-Y0-PNo" firstAttribute="trailing" secondItem="R7k-WM-uBE" secondAttribute="trailing" id="b3D-9W-uQ7"/>
+                            <constraint firstItem="bYL-Y0-PNo" firstAttribute="top" secondItem="R7k-WM-uBE" secondAttribute="bottom" constant="8.5" id="jot-c5-JSd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="GeP-fx-0BV" secondAttribute="trailing" id="BKM-I2-Ssn"/>
+                    <constraint firstItem="2np-x9-VQA" firstAttribute="top" secondItem="SdO-TK-uqe" secondAttribute="top" constant="16" id="Dex-hq-auL"/>
+                    <constraint firstItem="GeP-fx-0BV" firstAttribute="leading" secondItem="SdO-TK-uqe" secondAttribute="leading" id="Hqp-6o-RDF"/>
+                    <constraint firstAttribute="trailing" secondItem="5Tu-3A-BvI" secondAttribute="trailing" constant="20.5" id="PSd-hZ-Ufu"/>
+                    <constraint firstItem="2np-x9-VQA" firstAttribute="leading" secondItem="SdO-TK-uqe" secondAttribute="leading" constant="20" id="TSq-G8-7J6"/>
+                    <constraint firstItem="GeP-fx-0BV" firstAttribute="top" secondItem="2np-x9-VQA" secondAttribute="bottom" constant="13" id="VJm-yV-0sC"/>
+                    <constraint firstItem="5Tu-3A-BvI" firstAttribute="leading" secondItem="2np-x9-VQA" secondAttribute="trailing" constant="21" id="ZpE-eN-6mq"/>
+                    <constraint firstItem="5Tu-3A-BvI" firstAttribute="top" secondItem="SdO-TK-uqe" secondAttribute="top" constant="20" id="ahy-J9-Im2"/>
+                    <constraint firstAttribute="bottom" secondItem="GeP-fx-0BV" secondAttribute="bottom" priority="250" constant="83.5" id="wua-zh-RjO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="arrowImageView" destination="5Tu-3A-BvI" id="mUK-o8-OAV"/>
+                <outlet property="titleTextLabel" destination="2np-x9-VQA" id="Ycp-1i-hXU"/>
+                <outlet property="viewHeightConstraint" destination="SvS-wm-OHp" id="Qb2-vs-oqF"/>
+            </connections>
+            <point key="canvasLocation" x="175.5" y="-408.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrowRight" width="8" height="14"/>
+    </resources>
+</document>

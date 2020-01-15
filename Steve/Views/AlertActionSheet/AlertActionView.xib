@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AlertActionView" customModule="Steve" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OFE-kl-pWe">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="0.75804844798657722" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ynm-7M-317">
+                    <rect key="frame" x="20" y="176.5" width="335" height="315"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="315" id="vqQ-sB-0tB"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="zF8-dg-YbU"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="OFE-kl-pWe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CtU-wf-kQ6"/>
+                <constraint firstItem="OFE-kl-pWe" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="LgV-Zx-Oip"/>
+                <constraint firstItem="OFE-kl-pWe" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="NF7-Xr-6LD"/>
+                <constraint firstItem="OFE-kl-pWe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="OFz-F2-e5Q"/>
+                <constraint firstItem="ynm-7M-317" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="QyC-7c-MV3"/>
+                <constraint firstItem="ynm-7M-317" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="b6P-rW-ggI"/>
+                <constraint firstItem="ynm-7M-317" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ie8-jv-7bI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ynm-7M-317" secondAttribute="trailing" constant="20" id="zJx-H3-Jyh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="actionView" destination="ynm-7M-317" id="6Sa-vU-7O4"/>
+                <outlet property="actionViewCenterVerticalCons" destination="ie8-jv-7bI" id="5zM-H9-V3D"/>
+                <outlet property="actionViewHeightConstraint" destination="vqQ-sB-0tB" id="Uys-KX-g3N"/>
+            </connections>
+            <point key="canvasLocation" x="50.5" y="66.5"/>
+        </view>
+    </objects>
+</document>
